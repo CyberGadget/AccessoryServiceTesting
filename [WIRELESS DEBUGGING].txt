@@ -1,0 +1,13 @@
+Wireless debugging is necessary, since the USB port on the Android device is used for the accessory.
+
+-Open command window to: [SDK folder]\platform-tools
+
+-Connect android via USB & check that ADB recognizes it.
+
+-Enter Commands:
+>> adb tcpip 5555
+>> adb connect 137.112.234.148:5555
+(use the actual IP address of Android device)
+
+-Return to usb mode:
+>> adb usb
